@@ -1,0 +1,22 @@
+.tablero {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.casilla {
+  /* border: solid; */
+  background: #ccc;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.O{
+color:red;
+font-weight: bold;
+}
+.X{
+color: blue;
+font-weight: bold;
+}
