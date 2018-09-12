@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import {Casilla} from './fichas.js'
 
 
 class App extends Component {
@@ -38,7 +38,7 @@ class App extends Component {
       <div className="App">
          <div className="tablero">
              {this.state.tablero.map((casilla, 
-              index) => <div  onClick={()=> this.handleClick(index)} >{casilla}</div> )}
+              index) => <Casilla data={casilla} tirar={()=> this.handleClick(index)} ></Casilla> )}
          </div>
         
       </div>
