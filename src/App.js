@@ -23,7 +23,14 @@ class App extends Component {
     }
     
   }
- 
+  cambiaTurno() {
+    if (this.state.turno=== 1) {
+      this.setState({turno:2})
+    } else {
+      this.setState({turno:1})
+
+    }
+  }
   
   render() {
     
