@@ -1,12 +1,18 @@
+body{
+  background-color:gray;
+}
+
 .tablero {
+  border: solid;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
+  grid-gap: 3px;
+  margin: 20px;
+  background-color: black
 }
 
 .casilla {
-  /* border: solid; */
-  background: #ccc;
+  background-color:silver;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -19,4 +25,16 @@ font-weight: bold;
 .X{
 color: blue;
 font-weight: bold;
+}
+
+h1{
+  text-align: center;
+  color: orangered;
+}
+
+.WIN{
+  text-align: center;
+  background: white;
+  color: green;
+  margin: 20px;
 }
